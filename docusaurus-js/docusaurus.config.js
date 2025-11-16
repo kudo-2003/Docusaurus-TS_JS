@@ -1,5 +1,5 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
+
+
 // (when paired with `@ts-check`).
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
@@ -32,10 +32,13 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  /** Ngay cả khi bạn không sử dụng quốc tế hóa, bạn vẫn có thể sử dụng trường này để thiết lập siêu dữ liệu hữu ích như ngôn ngữ HTML.
+   *  Ví dụ: nếu trang web của bạn là tiếng Trung, bạn có thể muốn thay thế "en" bằng "zh-Hans". */
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  /**  Even if you don't use internationalization, you can use this field to set
+  * useful metadata like html lang. For example, if your site is Chinese, you
+  * may want to replace "en" with "zh-Hans".
+  */
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],

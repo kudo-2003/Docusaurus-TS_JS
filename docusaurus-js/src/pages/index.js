@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import React, { useEffect } from "react";
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -30,6 +31,17 @@ function HomepageHeader() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const audio = document.getElementById('welcome-audio');
+      if(audio){
+              audio.muted = false; // bỏ mute để nghe
+      }
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
@@ -37,6 +49,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <audio id="welcome-audio" src="/audio/intro.mp3" autoPlay muted />
       </main>
     </Layout>
   );

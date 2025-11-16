@@ -2,6 +2,11 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+## Application
+Ung
+npm install --save docusaurus
+
+
 ## Installation
 
 ```bash
@@ -23,6 +28,7 @@ yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Lệnh này tạo nội dung tĩnh vào thư mục `build` và có thể được cung cấp bằng bất kỳ dịch vụ lưu trữ nội dung tĩnh nào.
 
 ## Deployment
 
@@ -38,4 +44,11 @@ Not using SSH:
 GIT_USER=<Your GitHub username> yarn deploy
 ```
 
+```bash
+npm run start
+```
+
+```npm i @docusaurus/core@latest @docusaurus/preset-classic@latest @docusaurus/module-type-aliases@latest @docusaurus/types@latest`   ````
+
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Nếu bạn đang sử dụng các trang GitHub để lưu trữ, lệnh này là một cách thuận tiện để xây dựng trang web và đẩy lên nhánh `gh-pages`.

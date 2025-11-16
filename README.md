@@ -15,3 +15,13 @@
  - npm run deploy
 
 # Happy building awesome websites!
+
+## Git
+ - git remote -v
+ - git branch -M main 
+ - git push -u origin main
+ - git status
+ - git add .
+ - git commit -m "Mô tả thay đổi"
+ - git push
+ 
