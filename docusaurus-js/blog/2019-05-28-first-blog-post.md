@@ -1,12 +1,11 @@
 ---
-slug: first-blog-post
-title: First Blog Post
-authors: [slorber, yangshun]
-tags: [hola, docusaurus]
+slug: audio-profile
+title: my profile
+authors: [shinichi]
+tags: [docusaurus, audio, demo]
 ---
 
-Lorem ipsum dolor sit amet...
+"Hello everyone, I’m a software engineer, and it’s a pleasure to greet you all."
 
-<!-- truncate -->
+<audio controls src="/audio/blog-profile1.mp3"></audio>
 
-...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet

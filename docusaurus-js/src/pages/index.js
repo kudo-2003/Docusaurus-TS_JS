@@ -4,7 +4,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import React, { useEffect } from "react";
-
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
@@ -36,7 +35,7 @@ export default function Home() {
     const timer = setTimeout(() => {
       const audio = document.getElementById('welcome-audio');
       if(audio){
-              audio.muted = false; // bỏ mute để nghe
+              audio.muted = false; 
       }
     }, 3000);
     return () => clearTimeout(timer);

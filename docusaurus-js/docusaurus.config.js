@@ -1,5 +1,3 @@
-
-
 // (when paired with `@ts-check`).
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
@@ -10,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Welcome 🐊',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -33,9 +31,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   /** Ngay cả khi bạn không sử dụng quốc tế hóa, bạn vẫn có thể sử dụng trường này để thiết lập siêu dữ liệu hữu ích như ngôn ngữ HTML.
-   *  Ví dụ: nếu trang web của bạn là tiếng Trung, bạn có thể muốn thay thế "en" bằng "zh-Hans". */
-
-  /**  Even if you don't use internationalization, you can use this field to set
+  * Ví dụ: nếu trang web của bạn là tiếng Trung, bạn có thể muốn thay thế "en" bằng "zh-Hans". 
+  * Even if you don't use internationalization, you can use this field to set
   * useful metadata like html lang. For example, if your site is Chinese, you
   * may want to replace "en" with "zh-Hans".
   */
@@ -54,7 +51,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/facebook/docusaurus',
         },
         blog: {
           showReadingTime: true,
@@ -65,8 +62,8 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+            'https://github.com/facebook/docusaurus',
+          // Useful options to enforce blogging best practices || Các tùy chọn hữu ích để thực thi các phương pháp hay nhất về viết blog
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -81,12 +78,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      // Replace with your project's social card || Thay thế bằng thẻ xã hội của dự án của bạn
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: '🐊 Docusaurus English & Vietnam',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Docusaurus English & Vietnam',
           src: 'img/logo.svg',
         },
         items: [

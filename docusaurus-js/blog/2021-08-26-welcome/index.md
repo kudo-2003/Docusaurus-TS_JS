@@ -1,7 +1,7 @@
 ---
 slug: welcome
 title: Welcome
-authors: [slorber, yangshun]
+authors: [conan, shinichi]
 tags: [facebook, hello, docusaurus]
 ---
 
@@ -27,3 +27,5 @@ A blog post folder can be convenient to co-locate blog post images:
 The blog supports tags as well!
 
 **And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+
+|| Build optimized websites focus on your content || Xây dựng các trang web được tối ưu hóa tập trung vào nội dung của bạn

@@ -1,25 +1,24 @@
-yangshun:
-  name: Yangshun Tay
-  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
-  url: https://linkedin.com/in/yangshun
-  image_url: https://github.com/yangshun.png
+shinichi:
+  name: Kudo Shinichi 🚀
+  title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd ...
+  url: https://www.linkedin.com/in/luong-quang-hung-a495a824a/
+  image_url: https://photos.app.goo.gl/7Fke4fx6v1PHW2Zm7
   page: true
   socials:
     x: yangshunz
-    linkedin: yangshun
-    github: yangshun
-    newsletter: https://www.greatfrontend.com
+    linkedin: luong-quang-hung-a495a824a
+    github: kudo-2003
+    newsletter: https://x
 
-slorber:
-  name: Sébastien Lorber
+conan:
+  name: Conan 
   title: Docusaurus maintainer
   url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+  image_url: https://photos.app.goo.gl/7Fke4fx6v1PHW2Zm7
   page:
-    # customize the url of the author page at /blog/authors/<permalink>
     permalink: '/all-sebastien-lorber-articles'
   socials:
     x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    linkedin: luong-quang-hung-a495a824a
+    github: kudo-2003
+    newsletter: https://x
