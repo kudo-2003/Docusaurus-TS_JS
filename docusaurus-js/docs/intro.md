@@ -13,8 +13,8 @@ Get started by **creating a new site**.
 
 ### What you'll need
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+  || Khi cài đặt Node.js, bạn nên chọn tất cả các hộp kiểm liên quan đến phần phụ thuộc.
 
 ## Generate a new site
 

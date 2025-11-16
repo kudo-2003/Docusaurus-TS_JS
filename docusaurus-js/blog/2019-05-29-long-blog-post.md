@@ -1,6 +1,6 @@
 ---
 slug: docusaurus-meta-content
-title: Understanding Docusaurus Meta Content
+title: Understanding Docusaurus
 authors: [shinichi]
 tags: [docusaurus, meta, seo]
 ---
