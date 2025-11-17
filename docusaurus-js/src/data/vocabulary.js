@@ -3,7 +3,7 @@ const animalVocabulary = [
     title: "Cat 🐱",
     description: "Learn the word 'Cat'.",
     audioFile: "cat.mp3",
-    imageSrc: "/img/cat.png",
+    imageSrc: "/img/vocabulary/animals/cat.png",
   },
 {
   title: "Dog 🐶",
@@ -26,9 +26,9 @@ const animalVocabulary = [
   },
   {
     title: "Lion 🦁",
-    description: "Learn the word 'Lion'.",
+    description: "Con Sư Tử",
     audioFile: "lion.mp3",
-    imageSrc: "/img/lion.png",
+    imageSrc: "/img/vocabulary/animals/lion.png",
   },
   {
     title: "Monkey 🐒",
@@ -40,37 +40,37 @@ const animalVocabulary = [
     title: "Horse 🐴",
     description: "Learn the word 'Horse'.",
     audioFile: "horse.mp3",
-    imageSrc: "/img/horse.png",
+    imageSrc: "/img/vocabulary/animals/horse.png",
   },
   {
     title: "Bird 🐦",
     description: "Learn the word 'Bird'.",
     audioFile: "bird.mp3",
-    imageSrc: "/img/bird.png",
+    imageSrc: "/img/vocabulary/animals/bird.png",
   },
   {
     title: "Fish 🐟",
     description: "Learn the word 'Fish'.",
     audioFile: "fish.mp3",
-    imageSrc: "/img/fish.png",
+    imageSrc: "/img/vocabulary/animals/fish.png",
   },
   {
     title: "Rabbit 🐇",
-    description: "Learn the word 'Rabbit'.",
+    description: "Con Thỏ",
     audioFile: "rabbit.mp3",
-    imageSrc: "/img/rabbit.png",
+    imageSrc: "/img/vocabulary/animals/rabbit.png",
   },
   {
     title: "Bear 🐻",
-    description: "Learn the word 'Bear'.",
+    description: "Con Gấu Nâu",
     audioFile: "bear.mp3",
-    imageSrc: "/img/bear.png",
+    imageSrc: "/img/vocabulary/animals/bear.png",
   },
   {
     title: "Panda 🐼",
-    description: "Learn the word 'Panda'.",
+    description: "Con Gấu Trúc",
     audioFile: "panda.mp3",
-    imageSrc: "/img/panda.png",
+    imageSrc: "/img/vocabulary/animals/panda.png",
   },
 ];
 
