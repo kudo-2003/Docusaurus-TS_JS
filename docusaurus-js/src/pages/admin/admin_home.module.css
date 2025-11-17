@@ -1,0 +1,69 @@
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 16px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
+  cursor: pointer; /* thêm để card có thể click */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+
+/* 📱 Mobile nhỏ hơn 480px */
+@media (max-width: 480px) {
+  .title {
+    font-size: 22px;
+  }
+  .card {
+    padding: 15px;
+  }
+  .button {
+    width: 100%; /* nút full width cho dễ bấm */
+  }
+}
+
+/* 💻 Laptop lớn hơn 1024px */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px; /* rộng hơn cho laptop */
+  }
+  .title {
+    font-size: 32px;
+  }
+}

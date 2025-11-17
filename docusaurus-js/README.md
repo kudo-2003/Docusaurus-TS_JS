@@ -52,3 +52,10 @@ npm run start
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 Nếu bạn đang sử dụng các trang GitHub để lưu trữ, lệnh này là một cách thuận tiện để xây dựng trang web và đẩy lên nhánh `gh-pages`.
+
+Dùng Capacitor hoặc Cordova
+Hai công cụ này giúp bạn biến web app (như Docusaurus) thành mobile app.
+
+
+## hướng dẫn hùng .md & .mdx
+ - Markdown hiểu xuống dòng khi có 2 dấu cách ở cuối dòng hoặc <br />

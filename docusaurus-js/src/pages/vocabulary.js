@@ -13,8 +13,9 @@ export default function VocabularyPage() {
 
   return (
     <Layout>
+      <main className={styles.container}>
       <div className={styles.headingWrapper}>
-       <h1
+       <h2
         className={styles.clickableHeading}
         onClick={() => playAudio('vocabulary-h1.mp3')}
         role="button"
@@ -26,14 +27,14 @@ export default function VocabularyPage() {
         Choose your vocabulary
         <br />
         Lựa chọn từ vựng của bạn
-      </h1>
+      </h2>
       </div>
       <div className={styles.cardContainer}>
         <ButtonCard
           title="Animal 🐯 | Động Vật"
           description="Animals !!, Learn animal vocabulary. (Động vật !!, Học từ vựng động vật.)"
           audioFile="vocabulary-animals.mp3"
-          nextPage="/hello"
+          nextPage="/vocabulary/animal"
           imageSrc="/img/docusaurus-1024x1024.png"
         />
 
@@ -41,7 +42,7 @@ export default function VocabularyPage() {
           title="Game 🎮 | Trò Chơi"
           description="Game vocabulary here !! (Từ vựng game ở đây !!)"
           audioFile="vocabulary-game.mp3"
-          nextPage="/hello"
+          nextPage="/game"
           imageSrc="/img/docusaurus1-1024x1024.png"
         />
 
@@ -52,7 +53,16 @@ export default function VocabularyPage() {
           nextPage="/food"
           imageSrc="/img/docusaurus0-1024x1024.png"
         />
+        <ButtonCard
+          title="Actions And Gestures 🧑‍💻 | Hành động và cử chỉ"
+          description="Learn food vocabulary. (Học từ vựng về thức ăn.)"
+          audioFile="vocabulary-food.mp3"
+          nextPage="/food"
+          imageSrc="/img/docusaurus2-1024x1024.png"
+        />
       </div>
+      <br/>
+      </main>
     </Layout>
   );
 }

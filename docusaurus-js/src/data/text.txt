@@ -1,10 +1,10 @@
 
-1. Bilingual vocabulary list
+1. Bilingual vocabulary list || Danh sách từ vựng song ngữ
  - vocabulary.js
 
-2. Bilingual communication sentences
+2. Bilingual communication sentences ||
  - phrases.js 
 
-3. Data by topic
+3. Data by topic || 
  - lessons.js 
 

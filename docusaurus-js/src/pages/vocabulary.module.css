@@ -71,6 +71,11 @@
   font-size: 0.9rem;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right:15px;
+}
+
 /* 📱 Điện thoại (màn hình nhỏ) */
 @media (max-width: 600px) {
   .cardContainer {
