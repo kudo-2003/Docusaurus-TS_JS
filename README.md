@@ -24,4 +24,6 @@
  - git add .
  - git commit -m "Mô tả thay đổi"
  - git push
- 
+ ---- 
+ - kéo về
+ - git pull origin main
