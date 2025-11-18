@@ -1,0 +1,56 @@
+/* Simple styles for the phrases page */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.intro {
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-600, #444);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.item {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 6px;
+  background: var(--ifm-background-color, #fff);
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.4rem;
+}
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 1 1 auto;
+}
+.label {
+  font-weight: 700;
+}
+.text {
+  color: var(--ifm-color-emphasis-700, #222);
+}
+.controls {
+  white-space: nowrap;
+}
+.play {
+  background: var(--ifm-color-primary, #2b6cb0);
+  color: white;
+  border: none;
+  padding: 0.35rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.play:hover { opacity: 0.95 }
+.noAudio {
+  color: #888;
+  font-size: 0.9rem;
+}

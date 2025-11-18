@@ -48,7 +48,7 @@ GIT_USER=<Your GitHub username> yarn deploy
 npm run start
 ```
 
-```npm i @docusaurus/core@latest @docusaurus/preset-classic@latest @docusaurus/module-type-aliases@latest @docusaurus/types@latest`   ````
+``` npm i @docusaurus/core@latest @docusaurus/preset-classic@latest @docusaurus/module-type-aliases@latest @docusaurus/types@latest   ````
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 Nếu bạn đang sử dụng các trang GitHub để lưu trữ, lệnh này là một cách thuận tiện để xây dựng trang web và đẩy lên nhánh `gh-pages`.

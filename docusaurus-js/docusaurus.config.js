@@ -94,6 +94,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/vocabulary', label: 'Vocabulary', position: 'left'},
+          {to: '/phrases ', label: 'Phrases', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
