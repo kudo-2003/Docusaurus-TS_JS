@@ -27,3 +27,9 @@
  ---- 
  - kéo về
  - git pull origin main
+
+ ---------
+ cd d:/project/Docusaurus-TS_JS/docusaurus-js
+git add -A
+git -c user.name="Tên Của Bạn" -c user.email="lhung6802@gmail.com" commit -m "Mô tả thay đổi"
+git push origin main

@@ -1,65 +1,99 @@
-import React from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './phrases.module.css';
 
-const phrases = require('@site/src/data/phrases');
+// Load phrases (CommonJS export in your repo)
+const phrases = require('@site/src/data/phrases') || [];
 
-function playAudio(id) {
-	const el = document.getElementById(id);
-	if (!el) return;
-	try {
-		// rewind and play
-		el.currentTime = 0;
-		el.play();
-	} catch (e) {
-		// fallback: create new Audio
-		const src = el.getAttribute('src');
-		if (src) new Audio(src).play();
-	}
+const DEFAULT_VIDEO = 'https://www.w3schools.com/html/mov_bbb.mp4';
+// Local video provided by user. Use encodeURI to handle special characters in filename.
+const LOCAL_VIDEO = encodeURI('/videos/animal/624×624-food.mp4');
+
+function playAudioSrc(src) {
+  if (!src) return;
+  try {
+    const a = new Audio(src);
+    a.play();
+  } catch (e) {
+    // ignore
+  }
 }
 
 export default function PhrasesPage() {
-	return (
-		<Layout title="Phrases - Animals" description="Bilingual animal phrases with audio">
-			<main className={styles.container}>
-				<Heading as="h1">Câu giao tiếp song ngữ — Động vật</Heading>
+  const [selected, setSelected] = useState(0);
+  const [videoSrc, setVideoSrc] = useState(DEFAULT_VIDEO);
+  const videoRef = useRef(null);
 
-				<p className={styles.intro}>Danh sách câu tiếng Anh và tiếng Việt liên quan đến động vật. Nhấn nút phát để nghe Âm thanh (nếu có).</p>
+    // Load list of videos generated from static/videos
+    const videos = require('@site/src/data/videos') || [];
 
-				<div className={styles.list}>
-					{phrases.map((p, idx) => (
-						<div className={styles.item} key={idx}>
-							<div className={styles.row}>
-								<div className={styles.lang}>
-									<span className={styles.label}>EN:</span>
-									<span className={styles.text}>{p.en}</span>
-								</div>
+    // Build items: map phrases to cards; allow an optional `video` field on phrase
+    // If phrase doesn't have `video`, assign videos from the `videos` list in round-robin.
+    const items = phrases.map((p, i) => ({
+      title: p.en || `Item ${i + 1}`,
+      caption: p.vi || '',
+      video: p.video || (videos.length ? videos[i % videos.length] : DEFAULT_VIDEO),
+      audio: p.audio || null,
+    }));
 
-								<div className={styles.controls}>
-									{p.audio ? (
-										<>
-											<button className={styles.play} onClick={() => playAudio(`audio-${idx}`)} aria-label={`Play audio for phrase ${idx}`}>
-												▶️ Phát
-											</button>
-											<audio id={`audio-${idx}`} src={p.audio} preload="none" />
-										</>
-									) : (
-										<span className={styles.noAudio}>Không có âm thanh</span>
-									)}
-								</div>
-							</div>
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    v.pause();
+    v.src = videoSrc;
+    const playTry = async () => {
+      try {
+        v.currentTime = 0;
+        await v.play();
+      } catch (e) {
+        // ignore autoplay failures
+      }
+    };
+    playTry();
+  }, [videoSrc]);
 
-							<div className={styles.row}>
-								<div className={styles.lang}>
-									<span className={styles.label}>VI:</span>
-									<span className={styles.text}>{p.vi}</span>
-								</div>
-							</div>
-						</div>
-					))}
-				</div>
-			</main>
-		</Layout>
-	);
+  const onCardClick = (i) => {
+    const it = items[i];
+    setSelected(i);
+    if (it.audio) playAudioSrc(it.audio);
+    if (it.video) setVideoSrc(it.video);
+  };
+
+  return (
+    <Layout title="Video Cards" description="Video with overlay clickable cards">
+      <main className={styles.page}>
+        <Heading as="h1">Video with Clickable Cards</Heading>
+        <p className={styles.lead}>Nhấn vào một thẻ để bật video tương ứng; video lặp lại tự động. Các chữ hiển thị đè lên video với nền trong suốt.</p>
+
+        <div className={styles.grid}>
+          {items.map((it, i) => (
+            <div
+              key={i}
+              className={`${styles.card} ${selected === i ? styles.selected : ''}`}
+              onClick={() => onCardClick(i)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onCardClick(i); }}
+            >
+              <video
+                className={styles.cardVideo}
+                src={it.video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+              />
+
+              <div className={styles.cardOverlay}>
+                <div className={styles.title}>{it.title}</div>
+                <div className={styles.caption}>{it.caption}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </main>
+    </Layout>
+  );
 }

@@ -31,7 +31,7 @@ const animalVocabulary = [
   },
   {
     title: "Monkey 🐒",
-    description: "Learn the word 'Monkey'.",
+    description: "Con Khỉ",
     audioFile: "vocabulary/animals/vocabulary-monkey.mp3",
     imageSrc: "/img/vocabulary/animals/monkey.png",
   },

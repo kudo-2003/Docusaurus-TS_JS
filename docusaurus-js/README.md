@@ -1,11 +1,11 @@
 # Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ## Application
 Ung
 npm install --save docusaurus
 
+npm install --save-dev nodemon || sửa code tự động cập nhật code mới khi đang chạy
 
 ## Installation
 
