@@ -1,13 +1,12 @@
 import React, {useState, useRef, useEffect} from 'react';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import Head from '@docusaurus/Head';
 import styles from './phrases.module.css';
 
-// Load phrases (CommonJS export in your repo)
 const phrases = require('@site/src/data/phrases') || [];
 
 const DEFAULT_VIDEO = 'https://www.w3schools.com/html/mov_bbb.mp4';
-// Local video provided by user. Use encodeURI to handle special characters in filename.
 const LOCAL_VIDEO = encodeURI('/videos/animal/624×624-food.mp4');
 
 function playAudioSrc(src) {
@@ -25,11 +24,8 @@ export default function PhrasesPage() {
   const [videoSrc, setVideoSrc] = useState(DEFAULT_VIDEO);
   const videoRef = useRef(null);
 
-    // Load list of videos generated from static/videos
     const videos = require('@site/src/data/videos') || [];
-
-    // Build items: map phrases to cards; allow an optional `video` field on phrase
-    // If phrase doesn't have `video`, assign videos from the `videos` list in round-robin.
+    
     const items = phrases.map((p, i) => ({
       title: p.en || `Item ${i + 1}`,
       caption: p.vi || '',
@@ -61,7 +57,7 @@ export default function PhrasesPage() {
   };
 
   return (
-    <Layout title="Video Cards" description="Video with overlay clickable cards">
+    <Layout title="Phrases" description="Video with overlay clickable cards">
       <main className={styles.page}>
         <Heading as="h1">Video with Clickable Cards</Heading>
         <p className={styles.lead}>Nhấn vào một thẻ để bật video tương ứng; video lặp lại tự động. Các chữ hiển thị đè lên video với nền trong suốt.</p>

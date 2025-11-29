@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 
+import Head from '@docusaurus/Head';
+
 import ButtonCard from '../components/ButtonComponents/ButtonCard';
 import styles from './vocabulary.module.css';
 
@@ -13,6 +15,10 @@ export default function VocabularyPage() {
 
   return (
     <Layout>
+      <Head>
+        <title>Vocabulary</title>
+        <meta name="description" content="Welcome to my Docusaurus introduction page" />
+      </Head>
       <main className={styles.container}>
       <div className={styles.headingWrapper}>
        <h2

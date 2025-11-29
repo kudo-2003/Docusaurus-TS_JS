@@ -1,0 +1,80 @@
+/* introduction.module.css */
+
+/* Mặc định cho laptop/desktop */
+.mainContent {
+  padding: 40px;
+  font-size: 18px;
+}
+
+/* Tiêu đề */
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Đoạn mô tả */
+.description {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Link */
+.link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: #0078d4;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Container cho 2 ảnh */
+.imageRow {
+  display: flex;
+  justify-content: center;   /* căn giữa */
+  align-items: center;
+  gap: 16px;                 /* khoảng cách giữa 2 ảnh */
+  margin: 20px 0;
+}
+
+/* Style cho ảnh */
+.responsiveImage {
+  width: 45%;        /* mỗi ảnh chiếm khoảng nửa màn hình */
+  height: auto;
+  max-width: 400px;  /* giới hạn kích thước tối đa */
+  border-radius: 8px;
+}
+
+/* Responsive cho màn hình nhỏ (điện thoại) */
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .link {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  /* Trên mobile: ảnh full width, xếp dọc */
+  .imageRow {
+    flex-direction: column;  /* chuyển từ hàng ngang sang dọc */
+  }
+
+  .responsiveImage {
+    width: 100%;       /* chiếm toàn bộ chiều ngang */
+    max-width: 100%;   /* không vượt quá màn hình */
+    border-radius: 0;  /* bỏ bo góc để ảnh tràn đều */
+  }
+}

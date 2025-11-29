@@ -59,3 +59,36 @@ Hai công cụ này giúp bạn biến web app (như Docusaurus) thành mobile a
 
 ## hướng dẫn hùng .md & .mdx
  - Markdown hiểu xuống dòng khi có 2 dấu cách ở cuối dòng hoặc <br />
+ - ![Docusaurus v3.9](/img/png/blog/docusaurus-v3_9.png) thêm hình ảnh
+ - <img src="/img/png/blog/docusaurus-v3_9.png" alt="Docusaurus v3.9" width="600" /> thêm hình ảnh
+ - ___ dùng *** và --- để gạch ngang
+ - <ReactPlayer url='https://www.youtube.com/watch?v=dQw4w9WgXcQ' controls /> video
+ - <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demo Docusaurus" frameborder="0" allowfullscreen><iframe> video
+ - " 
+<div
+  style={{
+    position: 'relative',
+    paddingBottom: '56.25%',
+    height: 0,
+    overflow: 'hidden',
+    maxWidth: '100%',
+  }}
+>
+  <iframe
+    src="https://www.youtube.com/embed/Yhyx7otSksg?si=hazjK5VV5spV3JnY"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+    }}
+  />
+</div>
+"
+ - 

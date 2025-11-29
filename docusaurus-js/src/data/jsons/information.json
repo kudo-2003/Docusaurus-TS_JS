@@ -1,0 +1,54 @@
+{
+  "admonitions": [
+    {
+      "type": "info",
+      "title": "More information",
+      "icon": "ℹ️",
+      "content": {
+        "en": "Learning English opens the door to the world. Every word you learn is a step toward confidence. Practice daily, progress steadily, and success will surely follow.",
+        "vi": "Học tiếng Anh mở ra cánh cửa bước vào thế giới. Mỗi từ bạn học là một bước tiến đến sự tự tin. Luyện tập mỗi ngày, tiến bộ đều đặn, và thành công chắc chắn sẽ đến."
+      },
+      "audio": "/audio/information-page/information-0.mp3"
+    },
+    {
+      "type": "note",
+      "title": "Note here",
+      "icon": "❗",
+      "content": {
+        "en": "Please remember to log in regularly to track your progress. Always practice with both listening and speaking exercises. Keep your vocabulary notebook updated every day. Because learning English opens the door to the world, these small habits will lead you to big success.",
+        "vi": "Hãy nhớ đăng nhập thường xuyên để theo dõi tiến trình học của bạn. Luôn luyện tập cả kỹ năng nghe và nói. Cập nhật sổ từ vựng của bạn mỗi ngày. Bởi vì học tiếng Anh mở ra cánh cửa bước vào thế giới, những thói quen nhỏ này sẽ dẫn bạn đến thành công lớn."
+      },
+      "audio": "/audio/information-page/information-1.mp3"
+    },
+    {
+      "type": "danger",
+      "title": "Inspirational",
+      "icon": "🅰️",
+      "content": {
+        "en": "Danger reminds us to stay alert in every step we take. It teaches us that courage is not the absence of fear, but the strength to face it. In moments of danger, wisdom and calmness become our greatest protection.",
+        "vi": "Nguy hiểm nhắc nhở chúng ta phải luôn cảnh giác trong từng bước đi. Nó dạy rằng lòng dũng cảm không phải là không biết sợ, mà là sức mạnh để đối diện với nỗi sợ. Trong những lúc nguy hiểm, sự khôn ngoan và bình tĩnh chính là lá chắn lớn nhất của chúng ta."
+      },
+      "audio": "/audio/information-page/information-2.mp3"
+    },
+    {
+      "type": "tip",
+      "title": "Helpful tips",
+      "icon": "❇️",
+      "content": {
+        "en": "A simple tip can save you hours of effort. Consistency in small actions builds great achievements. Remember, every tip is a shortcut to learning faster and smarter.",
+        "vi": "Một mẹo nhỏ có thể giúp bạn tiết kiệm hàng giờ làm việc. Sự kiên trì trong những hành động nhỏ tạo nên thành tựu lớn. Hãy nhớ rằng, mỗi mẹo chính là con đường tắt để học nhanh hơn và thông minh hơn."
+      },
+      "audio": "/audio/information-page/information-3.mp3"
+    },
+    {
+      "type": "warning",
+      "title": "Warning",
+      "icon": "🔆",
+      "content": {
+        "en": "Warning: skipping daily practice will slow down your English progress. Ignoring pronunciation exercises can lead to bad speaking habits. Always pay attention to warnings in your learning journey, because small mistakes can grow into big obstacles.",
+        "vi": "Cảnh báo: bỏ qua việc luyện tập hằng ngày sẽ làm chậm tiến trình học tiếng Anh của bạn. Không chú ý đến luyện phát âm có thể tạo ra thói quen nói sai. Hãy luôn chú ý đến những cảnh báo trong hành trình học, vì lỗi nhỏ có thể trở thành trở ngại lớn."
+      },
+      "audio": "/audio/information-page/information-4.mp3"
+    }
+  ]
+}

@@ -2,23 +2,33 @@ shinichi:
   name: Kudo Shinichi 🚀
   title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd ...
   url: https://www.linkedin.com/in/luong-quang-hung-a495a824a/
-  image_url: https://photos.app.goo.gl/7Fke4fx6v1PHW2Zm7
+  image_url: /img/svg/blog/me.svg
   page: true
   socials:
     x: yangshunz
-    linkedin: luong-quang-hung-a495a824a
-    github: kudo-2003
+    linkedin: https://www.linkedin.com/in/luong-quang-hung-a495a824a/
+    github: https://github.com/kudo-2003
     newsletter: https://x
 
 conan:
   name: Conan 🎀
   title: Docusaurus maintainer
   url: https://sebastienlorber.com
-  image_url: https://photos.app.goo.gl/7Fke4fx6v1PHW2Zm7
-  page:
-    permalink: '/all-sebastien-lorber-articles'
+  image_url: /img/svg/blog/docusaurus.svg
+  page: true
   socials:
     x: sebastienlorber
-    linkedin: luong-quang-hung-a495a824a
-    github: kudo-2003
+    linkedin: https://www.linkedin.com/in/luong-quang-hung-a495a824a/
+    github: https://github.com/kudo-2003
     newsletter: https://x
+
+docusaurus:
+  name: Docusaurus 🦖
+  title: Open Source Documentation Tool
+  url: https://docusaurus.io
+  image_url: /img/svg/blog/docusaurus.svg   # hoặc ảnh bạn muốn hiển thị
+  page: true
+  socials:
+    x: docusaurus
+    github: https://github.com/facebook/docusaurus
+    website: https://docusaurus.io
