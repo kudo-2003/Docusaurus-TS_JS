@@ -13,3 +13,5 @@ gtts.save("../../static/audio/information-4.mp3", function (err, result) {
   if (err) { throw err; }
   console.log("Đã tạo file intro.mp3 thành công!");
 });
+
+// ngrok http --url=docusaurus-english-vietnam.ngrok.app 3000

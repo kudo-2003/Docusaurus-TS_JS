@@ -1,0 +1,23 @@
+.container {
+  position: relative;   /* quan trọng */
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;   /* quan trọng */
+  bottom: 0;            /* nằm ở đáy ảnh */
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5); /* nền mờ */
+  color: #fff;
+  text-align: center;
+}

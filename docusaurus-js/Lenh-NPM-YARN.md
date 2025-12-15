@@ -18,3 +18,6 @@ Options:
   docs:version <version>                                   Tag a new docs version
 *+++++++++++++++++++++++*
 npm list --depth=1
+
+-------------
+ngrok http --url=docusaurus-english-vietnam.ngrok.app 3000

@@ -11,4 +11,20 @@ tags: [docusaurus, audio, demo]
 
 <!-- truncate -->
 
-<audio controls src="/audio/blog-profile1.mp3"></audio>
+<audio controls src="/audio/blog-profile1.mp3"></audio>   
+
+:::note
+Đây là một ghi chú.
+:::
+
+:::tip
+Đây là một mẹo hữu ích.
+:::
+
+:::warning
+Cảnh báo: Hãy cẩn thận khi thao tác.
+:::
+
+:::danger
+Nguy hiểm: Không nên thử trong môi trường production.
+:::

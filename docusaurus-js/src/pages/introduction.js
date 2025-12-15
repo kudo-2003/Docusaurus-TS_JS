@@ -1,12 +1,12 @@
 import React from 'react';
-import Layout from '@theme/Layout';
+import Layout from '@theme/Layout'; // ✅ Correct import for Layout
 import ThemedImage from '@theme/ThemedImage';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import {ThemeClassNames, useWindowSize} from '@docusaurus/theme-common';
 
 import Admonition from '@theme/Admonition';
-// import AdmonitionLayout from '@theme/Admonition/Layout';
+
 
 import infoData from '../data/jsons/information.json';
 import styles from './introduction.module.css';
@@ -52,10 +52,6 @@ export default function Introduction() {
   />
   
 </div>
-{/* <AdmonitionLayout type="info" title="Song ngữ">
-      <p>Learning English opens the door to the world 🌍</p>
-      <p>Học tiếng Anh mở ra cánh cửa bước vào thế giới 🌍</p>
-    </AdmonitionLayout> */}
 
        {infoData.admonitions.map((item, index) => (
   <Admonition key={index} type={item.type} title={item.title} icon={item.icon}>
@@ -67,17 +63,7 @@ export default function Introduction() {
     </audio>
   </Admonition>
 ))}
-<dev>
-<video controls width="600">
-  <source src="/video/example.mp4" type="video/mp4" />
-  Trình duyệt của bạn không hỗ trợ video.
-</video>
-<video controls width="600">
-  <source src="/video/example.mp4" type="video/mp4" />
-  Trình duyệt của bạn không hỗ trợ video.
-</video>
-</dev>
-<br/>
+
         <Link className={styles.link} to="/docs/intro">Go to Docs</Link>
       </main>
     </Layout>

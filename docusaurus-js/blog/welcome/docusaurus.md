@@ -1,10 +1,11 @@
 ---
-slug: docusaurus
-title: Welcome Docusaurus
-date: 2025-11-23
-authors: [docusaurus]
-tags: [docusaurus, blog, welcome]
+slug: "docusaurus"
+title: "Welcome Docusaurus"
+date: "2025-11-23"
+authors: ["docusaurus"]
+tags: ["docusaurus", "blog", "welcome"]
 ---
+
 
 ## English 🇬🇧
 
@@ -59,6 +60,12 @@ Với Docusaurus, nhóm phát triển có thể:
     }}
   />
 </div>
+
+## Link Webside 
+
+<a href="https://trochoi24.com/" target="_blank" rel="noopener noreferrer">
+  🔗 Link Chơi Game
+</a>
 
 
 

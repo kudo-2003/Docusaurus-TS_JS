@@ -5,9 +5,12 @@
 Ung
 npm install --save docusaurus
 
+
 npm install --save-dev nodemon || sửa code tự động cập nhật code mới khi đang chạy
 
 ## Installation
+ - npm run clear
+
 
 ```bash
 yarn
@@ -91,4 +94,4 @@ Hai công cụ này giúp bạn biến web app (như Docusaurus) thành mobile a
   />
 </div>
 "
- - 
+ - <span style="background-color: red">Foo</span>

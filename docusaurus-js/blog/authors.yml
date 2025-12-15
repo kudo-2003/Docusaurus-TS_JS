@@ -14,7 +14,7 @@ conan:
   name: Conan 🎀
   title: Docusaurus maintainer
   url: https://sebastienlorber.com
-  image_url: /img/svg/blog/docusaurus.svg
+  image_url: /img/jpg/blog/conan.jpg
   page: true
   socials:
     x: sebastienlorber
@@ -26,9 +26,71 @@ docusaurus:
   name: Docusaurus 🦖
   title: Open Source Documentation Tool
   url: https://docusaurus.io
-  image_url: /img/svg/blog/docusaurus.svg   # hoặc ảnh bạn muốn hiển thị
+  image_url: /img/svg/blog/docusaurus.svg  
   page: true
   socials:
     x: docusaurus
     github: https://github.com/facebook/docusaurus
     website: https://docusaurus.io
+
+coccoc:
+  name: Cốc Cốc 🌍
+  title: Leading browser in Vietnam
+  url: https://coccoc.com
+  image_url: /img/png/blog/logo-name-coccoc.png
+  page: true
+  socials:
+    x: coccocbrowser
+    linkedin: https://www.linkedin.com/company/coccoc
+    website: https://coccoc.com
+    youtube: https://www.youtube.com/channel/UC8vJi0UjhcfaY2vYwnvgqQA
+
+facebook:
+  name: Facebook 📘
+  title: Social Media Giant
+  url: https://facebook.com
+  image_url: /img/png/blog/facebook-logo.png
+  page: true
+  socials:
+    x: facebook
+    linkedin: https://www.linkedin.com/company/facebook
+    website: https://facebook.com
+    youtube: https://www.youtube.com/facebook
+
+ai_google:
+  name: AI Google 🤖
+  title: AI by Google
+  url: https://ai.google
+  image_url: /img/png/blog/ai-google-logo.png
+  page: true
+  socials:
+    x: aigoogler
+    linkedin: https://www.linkedin.com/company/google-ai
+    website: https://ai.google
+    youtube: https://www.youtube.com/googleai
+
+Edulife:
+  name: Edulife 🎓
+  title: Education Technology Company
+  url: https://edulife.com
+  image_url: /img/png/blog/logo-edulife.png
+  page: true
+  socials:
+    x: edulife
+    linkedin: https://www.linkedin.com/company/edulife
+    website: https://edulife.com
+    youtube: https://www.youtube.com/@edulife.official
+meta:
+  name: Meta 🔵
+  title: Metaverse Pioneer
+  url: https://meta.com
+  image_url: /img/png/blog/meta-logo.png
+  page: true
+  socials:
+    x: meta
+    linkedin: https://www.linkedin.com/company/meta
+    website: https://meta.com
+    youtube: https://www.youtube.com/meta
+    shop: https://www.meta.com/
+    jobs: https://www.metacareers.com/
+    dev: https://developers.facebook.com/

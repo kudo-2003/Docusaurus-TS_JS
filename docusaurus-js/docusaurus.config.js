@@ -16,7 +16,13 @@ const config = {
   projectName: 'docusaurus', 
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  // onBrokenMarkdownLinks: 'warn',
+  markdown: {
+  hooks: {
+    onBrokenMarkdownLinks: 'warn',
+  },
+},
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -44,9 +50,7 @@ const config = {
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
+        theme: { customCss: './src/css/custom.css', },
       }),
     ],
   ],
@@ -63,8 +67,6 @@ const config = {
         },
         items: [
           // {type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Tutorial', },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/introduction', label: "Introduction", position: 'left'},
           {to: '/vocabulary', label: 'Vocabulary', position: 'left'},
           {to: '/phrases ', label: 'Phrases', position: 'left'},
           {href: 'https://github.com/facebook/docusaurus', label: 'GitHub', position: 'right', },
@@ -76,10 +78,7 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+              { label: 'Tutorial ⛱️', to: '/docs/intro', },
             ],
           },
           {
@@ -116,6 +115,7 @@ const config = {
             title: 'Introduction',
             items: [
               {label: 'Blog', to: '/blog', },
+              {label: 'Introduction', to: '/introduction', },
               {label: 'GitHub', to: '/github',},
             ],
           },
